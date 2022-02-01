@@ -1,0 +1,95 @@
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h2.table-title {
+    font-size: 32px;
+    color: $color1;
+
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+}
+
+h3 {
+  a {
+    color: $color2;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+table.teams-table {
+  border: 2px solid $color2;
+  width: 80%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  tr.table-header {
+    background-color: $color3;
+    font-size: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    td {
+      text-align: center;
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .arrows {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+
+        img {
+          width: 15px;
+          &:hover {
+            cursor: pointer;
+          }
+
+          @media (max-width: 768px) {
+            width: 15px;
+          }
+        }
+        .up-arrow {
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+  }
+
+  tr.table-row {
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+      @media (max-width: 768px) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    &:nth-of-type(odd) {
+      background-color: $color1;
+    }
+  }
+}

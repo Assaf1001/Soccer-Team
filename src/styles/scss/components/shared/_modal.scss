@@ -1,0 +1,20 @@
+.modal {
+  position: absolute;
+  top: calc(50vh - 100px);
+  left: auto;
+  right: auto;
+  width: 400px;
+  height: 200px;
+  background-color: $color1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 400px) {
+    top: 250px;
+    width: 100%;
+  }
+}
